@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - persona template ( micro tool, test svg)</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+  <div class="description">
+    <p class="italics">Hua Shu is an independent designer and art director based in New York City.</p>
+    <p class="italics">Recently:</p>
+    <ul>
+      <li> <a href="https://typogram.github.io/Anicons" target=”_blank”>🔡 Anicons</a></li>
+      <li> <a href="https://www.notion.so/hicc/Intro-to-Creative-Computing-F-19-7e4d4c6e3019487d9e12aab523fcc12b" target=”_blank”>⌨️ Creative Computing, F19/New School</a></li>
+      <li> <a href="https://www.notion.so/Core-Studio-Interaction-SP-20-c61f0620641446b583958b86f77fc5ed" target=”_blank”>💻 Core Studio Interaction, S20/New School</a></li>
+    </ul>
+    <p class="italics">Previously:</p>
+    <ul>
+      <li>🌻 Yale School of Art, MFA</li>
+      <li>🦢 Type@Cooper</li>
+    </ul>
+  </div>
+  <div class="tool">
+    <canvas id="canvas" resize></canvas>
+    <input v-model="verVal" :value="verVal" type="range" min="1" max="10" step="0.1" class="slider vertical">
+    <input v-model="horVal" :value="horVal" type="range" min="1" max="10" step="0.1" class="slider">
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.11/paper-full.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
